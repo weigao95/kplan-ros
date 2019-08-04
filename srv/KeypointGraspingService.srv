@@ -1,0 +1,8 @@
+sensor_msgs/Image rgb_image
+sensor_msgs/Image depth_image
+geometry_msgs/Pose camera2world  # The pose of the camera
+geometry_msgs/Point32[] pointcloud_world_frame
+geometry_msgs/Point[] keypoint_world_frame # The detected keypoint
+---
+int32 success
+geometry_msgs/Pose gripper_fingertip_in_world

@@ -1,0 +1,21 @@
+category_name: mug
+constraint_list:
+- keypoint_idx: 1
+  keypoint_name: handle_center
+  target_position: [0.2805570637756978, 0.57355473, 0.26890194]
+  tolerance: 0.001
+  type: point2point_constraint
+cost_list:
+- keypoint_idx: 2
+  keypoint_name: top_center
+  penalty_weight: 1.0
+  target_position: [0.2305570637756978, 0.59537693, 0.32479278]
+  type: point2point_cost
+- keypoint_idx: 0
+  keypoint_name: bottom_center
+  penalty_weight: 1.0
+  target_position: [0.3305570637756978, 0.59537693, 0.32479278]
+  type: point2point_cost
+keypoint_name_list: [bottom_center, handle_center, top_center]
+keypoint_nominal_target_position: {}
+task_name: mug2rack

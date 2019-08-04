@@ -1,0 +1,28 @@
+category_name: mug
+constraint_list:
+- keypoint_idx: 0
+  keypoint_name: bottom_center
+  target_position: [0.68501, -0.012, 0.01673]
+  tolerance: 0.001
+  type: point2point_constraint
+- axis_from_keypoint_idx: 0
+  axis_from_keypoint_name: bottom_center
+  axis_to_keypoint_idx: 2
+  axis_to_keypoint_name: top_center
+  target_axis: [0, 0, 1.0]
+  tolerance: 0.1
+  type: keypoint_axis_alignment
+cost_list:
+- keypoint_idx: 2
+  keypoint_name: top_center
+  penalty_weight: 1.0
+  target_position: [0.59347, 0.01889, 0.01464]
+  type: point2point_cost
+- keypoint_idx: -1
+  keypoint_name: handle_center
+  penalty_weight: 1.0
+  target_position: [0.61868, -0.04039, -0.00272]
+  type: point2point_cost
+keypoint_name_list: [bottom_center, handle_center, top_center]
+keypoint_nominal_target_position: {}
+task_name: mug_on_shelf

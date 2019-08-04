@@ -1,0 +1,4 @@
+geometry_msgs/Point[] keypoint_world_frame # The detected keypoint
+---
+int32 success
+geometry_msgs/Pose T_action # T_action.dot(keypoint_world_frame)=desired_location
