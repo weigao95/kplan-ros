@@ -61,7 +61,7 @@ add_service_files(
   FILES
   KeypointGraspingService.srv
   ActionPlanningkPAM.srv
-  JointLevelPlanningService.srv
+#  JointLevelPlanningService.srv
 )
 
 ## Generate actions in the 'action' folder
