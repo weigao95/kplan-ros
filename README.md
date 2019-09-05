@@ -4,7 +4,7 @@ This repo is part of [kPAM](https://github.com/weigao95/kPAM) that provides ros 
 
 ### Install Instruction
 
-- Clone this repo into your `catkin workspace` by `git clone https://github.com/weigao95/kplan-ros`
+- Clone this repo into your `catkin workspace` by `git clone https://github.com/weigao95/kplan-ros kplan_ros` (Note the underscore)
 - Build the message types by `catkin_make`
 - To run the code in `nodes/` and `scripts/`, you need to add `${project_path}` to `PYTHONPATH` [1]. You might run `export PYTHONPATH="${project_path}:${PYTHONPATH}"`
 
